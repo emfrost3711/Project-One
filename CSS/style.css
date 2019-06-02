@@ -1,13 +1,24 @@
+body {
+  display: flex;
+  min-height: 100vh;
+  flex-direction: column;
+}
 
-  body {
-    display: flex;
-    min-height: 100vh;
-    flex-direction: column;
-  }
+main {
+  flex: 1 0 auto;
+}
+h1{
+    color: teal;
+    background: orange;
+    text-align:center;
+}
 
-  main {
-    flex: 1 0 auto;
-  }
-  h1{
-      color: teal;
-  }
+footer{
+  align-content: center;
+  background-color: rgb(158, 202, 193);
+  position: center;
+}
+#edamam-badge {
+  
+ 
+}
