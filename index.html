@@ -1,105 +1,108 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <title>Document</title>
-
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+    integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
   <!-- Compiled and minified CSS -->
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+     <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
   <!-- linking style sheet -->
   <link rel="stylesheet" type="text/css" href="CSS/style.css" />
-
-
-
 </head>
-
 <body>
-    <div class = "container">
+  <div class="container">
+    <div>
       <h1>Netflix and Chili</h1>
-    
-  <!-- generates buttons -->
-  
-  <div class="row">
-    <a class="col s3 btn offset-s1">Random Recipe</a>
-    <a class="col s3 btn offset-s1" ></i>Randomize</a>
-    <a class="col s3 btn offset-s1"></i>Random Movie</a>
-    <!--need to fix button size -->
-  </div>
+      <!-- generates buttons -->
 
-  <div class="row">
-<!-- generates recipe search
- -->
-    <div class="col s5">
-      <nav>
-        <div class="nav-wrapper recipe-search">
-        <form>
-          <div class="input-field">
-            <input id="search" type="search" placeholder="Search Recipes (Ex: Chicken, Keto, Gluten-Free)" required>
-            <label class="label-icon" for="search"><i class="material-icons"></i></label>
-            <i class="material-icons">close</i>
-          </div>
-        </form>
-        </div>
-      </nav>
-    </div>
-
-    
-  
-
-  <!-- generates movie search -->
-  
-  <nav>
-
-    <div class="nav-wrapper movie-search">
-      <form>
-
-        <div class="input-field">
-
-          <input id="search" type="search" placeholder="Search Movies (Ex: Horror, The Little Mermaid, Fairies)"
-            required>
-          <!--look into the word required -->
-          <label class="label-icon" for="search"><i class="material-icons"></i></label>
-          <i class="material-icons">close</i>
-        </div>
-      </form>
-    </div>
-  </nav>
-</div>
-  <!-- footer -->
-  <footer class="page-footer">
-    <div class="container">
       <div class="row">
-        <div class="col l6 s12">
-          <h5 class="white-text">Footer Content</h5>
-          <p class="grey-text text-lighten-4">You can use rows and columns here to organize your footer content.</p>
+        <a class="col s3 btn offset-s1">Random Recipe</a>
+        <a class="col s3 btn offset-s1">Randomize</a>
+        <a class="col s3 btn offset-s1">Random Movie</a>
+        <!--need to fix button size -->
+      </div>
+    </div>
+    <div class="row">
+      <!-- generates recipe search
+ -->
+      <div class="col s6">
+        <nav>
+          <div class="nav-wrapper recipe-search">
+            <form>
+              <div class="input-field">
+                <input id="recipe-search" type="text" placeholder="Search Recipes (Ex: Chicken, Keto, Gluten-Free)" required>
+                <label class="label-icon" for="recipe-search"><i class="material-icons"></i></label>
+                <i class="material-icons">close</i>
+              </div>
+            </form>
+          </div>
+        </nav>
+        <div class="row">
+          <div class="col s12 m7">
+            <div class="card">
+              <div class="card-image">
+                <img src="images/sample-1.jpg">
+                <span class="card-title">Card Title</span>
+              </div>
+              <div class="card-content">
+                <p>I</p>
+              </div>
+            </div>
+          </div>
         </div>
-        <div class="col l4 offset-l2 s12">
-          <h5 class="white-text">Links</h5>
-          <ul>
-            <li><a class="grey-text text-lighten-3" href="#!">Link 1</a></li>
-            <li><a class="grey-text text-lighten-3" href="#!">Link 2</a></li>
-            <li><a class="grey-text text-lighten-3" href="#!">Link 3</a></li>
-            <li><a class="grey-text text-lighten-3" href="#!">Link 4</a></li>
-          </ul>
+      </div>
+      <!-- generates movie search -->
+      <div class="col s6">
+        <nav>
+          <div class="nav-wrapper movie-search">
+            <form>
+              <div class="input-field">
+                <input id="movie-search" type="text" placeholder="Search Movies (Ex: Horror, The Little Mermaid, Fairies)"
+                  required>
+                <!--look into the word required -->
+                <label class="label-icon" for="movie-search"><i class="material-icons"></i></label>
+                <i class="material-icons">close</i>
+              </div>
+            </form>
+          </div>
+        </nav>
+        <div class="row">
+          <div class="col s12 m7">
+            <div class="card">
+              <div class="card-image">
+                <!-- We will capture an image of the movie description-->
+                <img src="images/sample-1.jpg">
+                <span class="card-title">Card Title</span>
+              </div>
+              <div class="card-content">
+                <!-- We will capture the movie description-->
+                <p ></p>
+              </div>
+            </div>
+          </div>
         </div>
       </div>
     </div>
-    <div class="footer-copyright">
-      <div class="container">
-        © 2014 Copyright Text
-        <a class="grey-text text-lighten-4 right" href="#!">More Links</a>
+  </div>
+    <footer class="footer fixed-bottom">
+      <div id="imdb-badge" data-color="white">IMDb
+        <!-- <span>Copyright &copy;</span> -->
       </div>
+
+   <div id="edamam-badge" data-color="white">√
+        <span>Copyright &copy;</span>
+
+
+    <script src="https://developer.edamam.com/attribution/badge.js"></script>
     </div>
   </footer>
 
-  <!-- Compiled and minified JavaScript -->
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
   <script src="Javascript/app.js"></script>
   
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
 </body>
-
 </html>
