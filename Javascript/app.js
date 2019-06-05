@@ -1,59 +1,48 @@
+var inputRecipe;
 
-//need to add button id's to HTML
- 
- var inputRecipe = ["tomato", "chicken", "green beans", "keto", "vegan"]
 
-        console.log("working")
-        var searchEdamam = function(chili) {
-          //Link to Edamam API
-     var queryURL = "https://api.edamam.com/search?q=" + inputRecipe + "&app_id=997d5b1e&app_key=742f4d94c84ebe56fad332789e47f512";
 
-     $.ajax({
-       url: queryURL,
-       method: "GET"
-     }).then(function(chili) {
-       console.log(chili)
-     });
-     
-   };
-   $("#recipe-search").keyup(function(){
-    var userRecipe = $("#recipe-search").val().trim();
-    inputRecipe.push(userRecipe)
-    //generate random recipe using keyword
-   })
-   $("#recipeButton").on("click", function(){
-     //
-     var userRecipe = $("#recipe-search").val().trim();
-    //  needs to generate a random recipe using the array we provide
-    if(userRecipe === ""){
-      
-    for(var i = 0; i < inputRecipe.length; i++){
-      //show the picture and the recipe
-      alert("YES IT WORKS " + inputRecipe[i]);
-      
-      
+$("#recipeButton").on("click", function () {
+  $("#recipe-card").empty();
 
-      }
-    }
-    else{
-      inputRecipe = userRecipe;
-      alert("DOES IT STILL WORK? " + inputRecipe);
-    }
+  $.ajax({
+    url: "https://api.edamam.com/search?q=" + "chicken" + "&app_id=997d5b1e&app_key=742f4d94c84ebe56fad332789e47f512", //"chicken" will be replaced with inputRecipe
+    method: "GET"
+  }).then(function (response) {
+    console.log(response);
+
+    var randomRecipe = Math.floor((Math.random() * 10) + 1);
+    var recipeArray = response.hits[randomRecipe].recipe
+
+    var recipePhoto = recipeArray.image;
+    var ingredient = recipeArray.ingredientLines;
+    var recipeTitle = recipeArray.label;
+    var directions = recipeArray.url;
+
+    //need to create if/else statement to set inputRecipe = variables based on genre of movie inputed
+
+    //puts recipe Title onto the page
+    var recipeTitleText = $("<p>").text(recipeTitle);
+    $("#recipe-card").append(recipeTitleText);
+
+    //puts recipe image onto the page
+    var image = $("<img>").attr("src", recipePhoto);
+    $("#recipe-card").append(image);
+
+    //puts ingredient list onto the page
+    var ingredientText = $("<p>").text(ingredient);
+    $("#recipe-card").append(ingredientText);
+
+    //creates link to the original recipe source, giving directions
+    var directionText = $("<a>").attr({
+      "href": directions,
+      "target": "_blank"
+    });
+    $(directionText).text("Like this recipe?")
+    $("#recipe-card").append(directionText);
+
+
+
   });
-    
-      //  .recipe-search input does not exist
-    
-      //generate random recipe from full website
-      //maybe pulling keyword from an array of random keywords we provide
-   
-      //generate new random recipe using keyword user provided
-     
-    //generate random recipe using key word, pulled from edamam
-  
-  
 
-   //need to connect
-   searchEdamam();
-
-   //Don't need both the check boxes and the separate recipe and movie generators.
-        
+});
