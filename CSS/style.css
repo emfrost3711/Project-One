@@ -114,6 +114,7 @@ footer{
 /* .recipeBtn  {
   margin-top:100px;
 } */
+<<<<<<< HEAD
 img {
   margin-top:30px;
 
@@ -122,3 +123,8 @@ img {
 /* #edamam-badge {
   margin-bottom: 20px;
 } */
+=======
+.recipeTitle{
+  color: rgb(251, 207, 171);
+}
+>>>>>>> master
