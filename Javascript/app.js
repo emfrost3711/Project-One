@@ -51,8 +51,10 @@ $("#recipeButton").on("click", function () {
 
 });
 
+var movie = $("#search").val().trim()
+console.log ("movie " + movie)
 // var movie = $(this).attr("data-name");
-    var queryURL = "https://www.omdbapi.com/?t=" + "superman" + "&apikey=trilogy";
+    var queryURL = "https://www.omdbapi.com/?t=" + movie + "&apikey=trilogy";
     
     // do the ajax call to OMBD
   
@@ -86,10 +88,11 @@ $("#recipeButton").on("click", function () {
   
   // pull the genre array and set to var genre 
   // var genre = genres.push(response.Genre[i])
-  
+
   
   });
 });
 
 
 // displayMovieInfo();
+
