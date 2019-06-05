@@ -26,7 +26,7 @@ $("#recipeButton").on("click", function () {
     $("#recipe-card").append(recipeTitleText);
 
     //puts recipe image onto the page
-    var image = $("<img>").attr("src", recipePhoto);
+    var image = $("<img>").attr("src", recipePhoto );
     $("#recipe-card").append(image);
 
     //puts ingredient list onto the page
@@ -46,3 +46,47 @@ $("#recipeButton").on("click", function () {
   });
 
 });
+
+
+function displayMovieInfo() {
+
+  var movie = $(this).attr("data-name");
+  var queryURL = "https://www.omdbapi.com/?t=" + movie + "&apikey=trilogy";
+  
+  // do the ajax call to OMBD
+
+  $.ajax({
+    url: queryURL,
+    method: "GET"
+  }).then(function(response) {
+    console.log(response);
+    console.log(response.Genre);
+    console.log(response.Title);
+    console.log(response.Plot);
+
+
+// //set variables to dig into the response
+// var title = response.Title;
+// var poster = response.Poster;
+// var plot = response.Plot; 
+// var genres = [""], 
+
+// //create a movie div and put it in the movie card
+// var movieDiv = $(#movie-card).append.$("<div class='movie'>");
+// //add title to the movie div
+// movieDiv.append(title);
+// //create an element to hold the image then add image to the movie div
+// var image = $("<img>").attr("src", poster);
+// movieDiv.append(image)
+// //create a new p for the plot then add plot to the movie div
+// var plotPara = $("<p>").text("Plot: " + plot);
+// movieDiv.append(plotPara);
+
+// // pull the genre array and set to var genre 
+// var genre = genres.push(response.Genre[i])
+
+});
+
+}
+
+displayMovieInfo();

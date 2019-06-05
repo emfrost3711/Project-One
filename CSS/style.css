@@ -89,13 +89,14 @@ border-radius:.25em;
 header  {
   /* background-color:white; */
   background: url("../images/headerPic.jpg");
-  
+  /* background-repeat: no-repeat;   */
 
-   /* background-size: cover; */
+   background-size: cover;
   /* background-color:rgb(136, 135, 135); */
   margin-top: -10px;
   border-bottom: 2px solid #cccccc;
-  height:300px;
+  height:100%;
+  width:100%;
 }
 
 .footer {
@@ -112,4 +113,12 @@ footer{
 
 /* .recipeBtn  {
   margin-top:100px;
+} */
+img {
+  margin-top:30px;
+
+}
+
+/* #edamam-badge {
+  margin-bottom: 20px;
 } */
