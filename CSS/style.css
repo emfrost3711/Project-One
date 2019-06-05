@@ -1,25 +1,115 @@
+body {
+  font-family: Georgia, Times, "Times New Roman", serif;
+  display: flex;
+  min-height: 100vh;
+  flex-direction: column;
+}
 
-  body {
-    display: flex;
-    min-height: 100vh;
-    flex-direction: column;
+main {
+  flex: 1 0 auto;
+}
+
+h1{
+  color: rgb(255, 0, 0);
+  /* font-style: Comic ; */
+  text-align:center;
+  font-size: 56px;
+  font-weight: bold;
+  font-feature-settings: "aalt";
+}
+
+h3{
+  font-size: 28px;
+  margin-left:30px;
+  font-style: inherit;
+  color: rgb(158, 202, 193);
+
+}
+header p  {
+  text-align:center;
+  color: white;
+}
+p {
+  font-size: 18px;
+ 
+  /* color: black; */
+  /* color: rgb(158, 202, 193); */
+  /* font-weight: bold; */
+  /* text-align: center; */
+}
+
+
+.container  {
+  background-color: rgb(251, 207, 171);
+  margin-top: 20px;
+  margin-bottom:  100px;
+  height: 900px;
+  width:  1200px;
+  border-radius:  .25em;
+}
+
+.row {
+  margin-top: 50px;
+  border: 10px color grey; 
+}
+
+.input-field  {
+  object-position: center;
+}
+div.col.s6  {
+  /* background:  rgb(255, 227, 175); */
+  border:5px rgb(65, 65, 65);
+  height: 825px;
+  margin-top:20px;
+  
+}
+
+#recipeButton {
+  background-color: rgb(109, 170, 35);
+  object-position: center;
+  margin-top:20PX;
+  width: 175px;
+  border-radius:  .25em;
+  color: white;
+  font-family: Georgia,serif;
+  font-weight: bold;
+}
+
+
+input#search {
+width:  500px;
+height: 50px;
+background: white;
+border: 5px color grey;
+margin-top: 7.5px;
+text-align:  center;
+border-radius:.25em;
+}
+
+header  {
+  /* background-color:white; */
+  background: url("../images/headerPic.jpg");
+  
+
+   /* background-size: cover; */
+  /* background-color:rgb(136, 135, 135); */
+  margin-top: -10px;
+  border-bottom: 2px solid #cccccc;
+  height:300px;
+}
+
+.footer {
+  text-align: center;
+  font-weight: bold;
   }
 
-  main {
-    flex: 1 0 auto;
-  }
-  h1{
-      color: teal;
-      background: orange;
-      text-align:center;
-  }
+footer{
+  align-content: center;
+  background-color: rgb(158, 202, 193);
+  position: center;
+  
+}
 
-  footer{
-    align-content: center;
-    background-color: rgb(158, 202, 193);
-    position: center;
-  }
-  #edamam-badge {
-    
-   
-  }
+/* .recipeBtn  {
+  margin-top:100px;
+} */
