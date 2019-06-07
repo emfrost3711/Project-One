@@ -5,6 +5,10 @@ var movie;
 $("#recipeButton").on("click", function () {
   $("#recipe-card").empty();
   $("#movie-card").empty();
+  var button = $("#recipeButton")
+  button.text("Get Another Recipe!");
+  button.css("background-color", "red");
+  button.css("width", "250px");
 
 var movie = $("#search").val().trim()
 console.log ("movie " + movie)
@@ -17,14 +21,12 @@ console.log ("movie " + movie)
       url: queryURL,
       method: "GET"
     }).then(function(response) {
-      // console.log(response.Title);
-      // console.log(response.Plot);
+     
   //set variables to dig into the response
   var title = response.Title;
   var poster = response.Poster;
   var plot = response.Plot; 
   var genre = response.Genre;
-  // var genres = [""];
   
   //create a movie div and put it in the movie card
   //add title to the movie div
@@ -41,22 +43,10 @@ console.log ("movie " + movie)
   $("#movie-card").append(plotPara);
   
   // pull the genre array and set to var genre 
-  // var genre = genres.push(response.Genre[i])
-  // var genreArr = [];
   var changeGenre = genre.split(", ");
   // var stringGenre = JSON.stringify(changeGenre)
   var genreLength = changeGenre.length
   var randomNumber = Math.floor(Math.random() * genreLength);
-
-
-  
-  // genreArr.push();
-
-  console.log("!!!!!!" + genreLength);
-  console.log(changeGenre, "string genre")
-  console.log(changeGenre[randomNumber]);
-  // console.log(genreArr[randomNumber]);
-
 
       var randomGenre = changeGenre[randomNumber];
 
