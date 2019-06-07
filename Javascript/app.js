@@ -17,8 +17,6 @@ console.log ("movie " + movie)
       url: queryURL,
       method: "GET"
     }).then(function(response) {
-      console.log(response);
-      // console.log(response.Genre);
       // console.log(response.Title);
       // console.log(response.Plot);
   //set variables to dig into the response
@@ -44,52 +42,70 @@ console.log ("movie " + movie)
   
   // pull the genre array and set to var genre 
   // var genre = genres.push(response.Genre[i])
-      
+  // var genreArr = [];
+  var changeGenre = genre.split(", ");
+  // var stringGenre = JSON.stringify(changeGenre)
+  var genreLength = changeGenre.length
+  var randomNumber = Math.floor(Math.random() * genreLength);
+
 
   
-    if(genre.includes("Action")){
-          inputRecipe = "hamburger";
-        }
-        else if(genre.includes("Adventure")){
-          inputRecipe = "pie";
-        }
-        else if(genre.includes("Drama")){
+  // genreArr.push();
+
+  console.log("!!!!!!" + genreLength);
+  console.log(changeGenre, "string genre")
+  console.log(changeGenre[randomNumber]);
+  // console.log(genreArr[randomNumber]);
+
+
+      var randomGenre = changeGenre[randomNumber];
+
+      switch(randomGenre){
+        case "Action":
+          inputRecipe = "hamburger"
+          break;
+          case "Adventure":
+          inputRecipe = "pie"
+          break;
+          case "Drama":
           inputRecipe = "southern"
-        }
-        else if(genre.includes("Romance")){
+          break;
+          case "Romanch":
           inputRecipe = "french"
-        }
-        else if(genre.includes("Crime")){
+          break;
+          case "Crime":
           inputRecipe = "italian"
-        }
-        else if(genre.includes("Musical")){
+          break;
+          case "Musical":
           inputRecipe = "austrian"
-        }
-        else if(genre.includes("Fantasy")){
+          break;
+          case "Fantasy":
           inputRecipe = "cake"
-        }
-        else if(genre.includes("Comedy")){
+          break;
+          case "Comedy":
           inputRecipe = "chinese"
-        }
-        else if(genre.includes("Animation")){
+          break;
+          case "Animation":
           inputRecipe = "japanese"
-        }
-        else if(genre.includes("Family")){
+          break;
+          case "Family":
           inputRecipe = "pizza"
-        }
-        else if(genre.includes("Horror")){
+          break;
+          case "Horror":
           inputRecipe = "thai"
-        }
-        else if(genre.includes("Mystery")){
+          break;
+          case "Mystery":
           inputRecipe = "mediterranean"
-        }
-        else if(genre.includes("Thriller")){
+          break;
+          case "Thriller":
           inputRecipe = "middle eastern"
-        }
-        else{
+          break;
+          default:
           inputRecipe = "salad"
-        }
-        console.log(inputRecipe);
+      }
+
+
+
 
         $.ajax({
           url: "https://api.edamam.com/search?q=" + inputRecipe + "&app_id=997d5b1e&app_key=742f4d94c84ebe56fad332789e47f512", //"chicken" will be replaced with inputRecipe
