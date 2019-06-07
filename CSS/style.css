@@ -76,7 +76,7 @@ div.col.s6  {
 }
 
 
-input#search {
+#search {
 width:  500px;
 height: 50px;
 background: white;
@@ -115,4 +115,8 @@ footer{
 } */
 .recipeTitle{
   color: rgb(251, 207, 171);
+}
+
+@media screen and (max-width: 640px){
+  background-image: cover;
 }
