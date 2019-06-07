@@ -7,8 +7,8 @@
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <title>Document</title>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
-    integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+  <!-- <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+    integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous"> -->
   <!-- Compiled and minified CSS -->
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
   <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
@@ -19,6 +19,7 @@
 <body>
 
   <header>
+ 
     <!-- <img class="materialboxed" width="650" src="images/headerPic.jpg"> -->
     <!-- <nav class="nav-extended"> -->
     <h1>Netflix and Chili</h1>
@@ -27,17 +28,16 @@
     <div class="input-field" >
       <input id="search" type="search" placeholder="Search Movies (Ex: Horror, The Little Mermaid, Fairies)" required>
       <a class="btn-small" id="recipeButton"><b>Get Recipe</b></a>
-    </div>
 
     <!-- </nav> -->
   </header>
-  <section class="section-extended" >
+ 
   <div class="container">
 
     <div class="row">
       <!-- Recipe card-->
-      <div class="col s6">
-        <div class="card col s12 m12">
+      <div class="col s12 m6">
+        <div class="card">
           <h3>Recipe</h3>
           <div class="card-image">
             <span class="card-title"></span>
@@ -49,8 +49,9 @@
       </div>
 
       <!-- Movie card -->
-      <div class="col s6">
-        <div class="card col s12 m12">
+      <div class="col s12 m6"> <!-- Mobile Devices 
+        <= 600px -->
+        <div class="card">
           <h3>Movie</h3>
           <div class="card-image">
             <!-- We will capture an image of the movie description-->
@@ -76,7 +77,7 @@
   <script src="https://developer.edamam.com/attribution/badge.js"></script>
   <script src="Javascript/app.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
-</section>
+
 </body>
 
 </html>

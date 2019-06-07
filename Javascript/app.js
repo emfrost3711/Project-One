@@ -17,10 +17,10 @@ console.log ("movie " + movie)
       url: queryURL,
       method: "GET"
     }).then(function(response) {
-     
-      console.log(response.Genre);
-      console.log(response.Title);
-      console.log(response.Plot);
+      console.log(response);
+      // console.log(response.Genre);
+      // console.log(response.Title);
+      // console.log(response.Plot);
   //set variables to dig into the response
   var title = response.Title;
   var poster = response.Poster;
@@ -39,7 +39,7 @@ console.log ("movie " + movie)
   $("#movie-card").append(image)
 
   //create a new p for the plot then add plot to the movie div
-  var plotPara = $("<p>").text("Plot: " + plot);
+  var plotPara = $("<p class='plotClass'>").text("Plot: " + plot);
   $("#movie-card").append(plotPara);
   
   // pull the genre array and set to var genre 
@@ -117,7 +117,7 @@ console.log ("movie " + movie)
           $("#recipe-card").append(image);
       
       
-          var ingredientText = $("<p>").text(ingredient);
+          var ingredientText = $("<p class='recipeIngredients'>").text(ingredient);
           //puts ingredient list onto the page
           $("#recipe-card").append(ingredientText);
       
