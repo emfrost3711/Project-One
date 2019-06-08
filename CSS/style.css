@@ -122,7 +122,7 @@ background-size:100% 100%;
   width:100%; */
 }
 
-.footer {
+.page-footer {
   text-align: center;
   font-weight: bold;
   }
@@ -186,3 +186,6 @@ p.plotClass  {
   background-image: cover;
 }
 
+#page-footer {
+  background-color: rgb(158, 202, 193);
+}
