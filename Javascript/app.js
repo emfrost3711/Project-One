@@ -1,7 +1,6 @@
 var inputRecipe;
 var movie;
 
-
 $("#recipeButton").on("click", function () {
   $("#recipe-card").empty();
   $("#movie-card").empty();
