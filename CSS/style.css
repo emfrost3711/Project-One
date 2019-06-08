@@ -21,13 +21,24 @@ body {
  }
  
  h3{
+  font-family: 'Nanum Gothic', sans-serif;
+  font-weight: bold;
   font-size: 28px;
   margin-left:30px;
+  margin-right:30px;
+  margin-top:30px;
   font-style: inherit;
-  color: rgb(158, 202, 193);
+  color: darkslategray; 
+  border-bottom: 1px solid darkslategray;
+  text-align: left;
   
  
  }
+
+ #movie.card {
+   margin-top: 100px;
+ }
+
  header p  {
   text-align:center;
   color: white;
@@ -42,10 +53,10 @@ body {
  }
  
  .container  {
-  background-color: grey;
+  background-color: rgb(228, 228, 228);
   margin-top: 20px;
   margin-bottom:  100px;
-  max-height: 900px;
+  max-height: 1200px;
   max-width:  1200px;
   border-radius:  .25em;
  }
@@ -118,7 +129,7 @@ body {
   background: url("../images/headerPic.jpg");
   /* background-repeat: no-repeat;   */
  /* background-size:100% 100%; */
-   /* background-size: cover; */
+   background-size: cover;
   /* background-color:rgb(136, 135, 135); */
   margin-top: -10px;
   border-bottom: 2px solid #cccccc;
@@ -133,7 +144,7 @@ body {
  
  footer{
   align-content: center;
-  background-color: rgb(158, 202, 193);
+  background-color: rgb(109, 170, 35);
   position: center;
  
  }
@@ -144,19 +155,36 @@ body {
  .recipeTitle{
   margin-top: 20px;
   color: rgb(109, 170, 35);
- 
+  text-align: center;
   font-size: 22px;
-  font-family: Georgia,serif;
+  font-family: 'Nanum Gothic', sans-serif;
  }
  
  
  .movieTitleText {
   color: rgb(109, 170, 35);
   font-size: 22px;
-  font-family: Georgia,serif;
+  font-family: 'Nanum Gothic', sans-serif;
+  text-align: center;
  
  }
  
+ #movie-image {
+   margin-bottom: 30px;
+   display: block;
+   margin-left: auto;
+   margin-right: auto;
+   width: 75%;
+ }
+ 
+ #recipe-image {
+   margin-bottom: 30px;
+   display: block;
+   margin-left: auto;
+   margin-right: auto;
+   width: 75%;
+ }
+
  /* .card-title {
  color: rgb(251, 207, 171);
  font-family: Georgia,serif;
@@ -172,16 +200,21 @@ body {
  }
  
  .card {
-  margin-top: -10px;
+  margin-top: -25px;
+  padding-top: 10px;
  }
  
- p.plotClass  {
+ .plotClass  {
   margin-top:20px;
   position:left;
+  font-family: 'Nanum Gothic', sans-serif;
  }
  
  .recipeIngredients {
-  /* margin-top:20px; */
+
+  margin-top: 20px;
+  position:left; 
+  font-family: 'Nanum Gothic', sans-serif;
  }
  
  
