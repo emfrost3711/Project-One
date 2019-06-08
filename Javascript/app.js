@@ -34,7 +34,7 @@ console.log ("movie " + movie)
   $("#movie-card").append(movieDiv);
 
   // //create an element to hold the image then add image to the movie div
-  var image = $("<img>").attr("src", poster);
+  var image = $("<img id = 'movie-image'>").attr("src", poster);
   $("#movie-card").append(image)
 
   //create a new p for the plot then add plot to the movie div
@@ -118,7 +118,7 @@ console.log ("movie " + movie)
           $("#recipe-card").append(recipeTitleText);
       
           //puts recipe image onto the page
-          var image = $("<img>").attr("src", recipePhoto);
+          var image = $("<img id = 'recipe-image'>").attr("src", recipePhoto);
           $("#recipe-card").append(image);
       
       
