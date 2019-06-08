@@ -3,7 +3,7 @@ body {
   display: flex;
   min-height: 100vh;
   flex-direction: column;
-  cursor: url("../images/pizza-slice.png"), default !important;
+  cursor: url("../images/fork-xxl.png"), default !important;
  }
  
  main {
@@ -17,6 +17,7 @@ body {
   font-size: 56px;
   font-weight: bold;
   font-feature-settings: "aalt";
+  text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
  }
  
  h3{
@@ -24,11 +25,13 @@ body {
   margin-left:30px;
   font-style: inherit;
   color: rgb(158, 202, 193);
+  
  
  }
  header p  {
   text-align:center;
   color: white;
+  text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
  }
  p {
   font-size: 18px;
@@ -39,7 +42,7 @@ body {
  }
  
  .container  {
-  background-color: rgb(251, 207, 171);
+  background-color: grey;
   margin-top: 20px;
   margin-bottom:  100px;
   max-height: 900px;
@@ -140,7 +143,7 @@ body {
  } */
  .recipeTitle{
   margin-top: 20px;
-  color: rgb(251, 207, 171);
+  color: rgb(109, 170, 35);
  
   font-size: 22px;
   font-family: Georgia,serif;
@@ -148,7 +151,7 @@ body {
  
  
  .movieTitleText {
-  color: rgb(251, 207, 171);
+  color: rgb(109, 170, 35);
   font-size: 22px;
   font-family: Georgia,serif;
  
@@ -181,6 +184,4 @@ body {
   /* margin-top:20px; */
  }
  
- @media screen and (max-width: 640px){
-  background-image: cover;
- }
+ 
