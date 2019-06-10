@@ -18,26 +18,26 @@
 </head>
 
 <body>
-
+    <main>
   <header>
 
     <h1>Netflix and Chili</h1>
-    <p>Making Dinner and a Movie that much easier.</p>
+    <p id = "cuteSaying">Making Dinner and a Movie that much easier.</p>
     
     <div class="input-field" >
-      <input id="search" type="search" placeholder="Search Movies (Ex: Saw, The Little Mermaid, 13 Going On 30)" required>
+      <input id="search" type="search" onfocus="this.value=''" placeholder="Search Movies (Ex: Saw, The Little Mermaid, 13 Going On 30)" required>
       <a class="btn-small" id="recipeButton"><b>Get Recipe</b></a>
 
     <!-- </nav> -->
   </header>
- 
+
   <div class="container">
 
     <div class="row">
       <!-- Recipe card-->
       <div class="col s12 m12 l6">
         <div class="card">
-          <h3>Recipe</h3>
+          <h3 id ="cardTitle">Recipe</h3>
           <div class="card-image">
             <span class="card-title"></span>
           </div>
@@ -51,7 +51,7 @@
       <div class="col s12 m12 l6"> <!-- Mobile Devices 
         <= 600px -->
         <div class="card">
-          <h3>Movie</h3>
+          <h3 id ="cardTitle">Movie</h3>
           <div class="card-image">
             <!-- We will capture an image of the movie description-->
             <span class="card-title"></span>
@@ -64,7 +64,7 @@
       </div>
     </div>
   </div>
-
+</main>
   <footer class="footer fixed-bottom">
     <div id="OMDb-badge" data-color="white">OMDb
       <!-- <span>Copyright &copy;</span> -->
