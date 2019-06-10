@@ -1,3 +1,26 @@
+/* combined classes */
+.plotClass, .recipeIngredients {
+  font-size:18px;
+  margin-top: 20px;
+  position:left; 
+  font-family: 'Nanum Gothic', sans-serif;
+ }
+
+ #movie-image, #recipe-image {
+  margin-bottom: 30px;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 75%;
+}
+.movieTitleText, .recipeTitle {
+  color: rgb(109, 170, 35);
+  font-size: 22px;
+  font-family: 'Nanum Gothic', sans-serif;
+  text-align: center;
+ 
+ }
+
 body {
   font-family: Georgia, Times, "Times New Roman", serif;
   display: flex;
@@ -6,13 +29,13 @@ body {
   cursor: url("../images/fork-xxl.png"), default !important;
  }
  
+ /* main tag is breaking the styling not sure how or why?? */
  main {
   flex: 1 0 auto;
  }
  
  h1{
   color: rgb(255, 0, 0);
-  /* font-style: Comic ; */
   text-align:center;
   font-size: 56px;
   font-weight: bold;
@@ -20,7 +43,7 @@ body {
   text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
  }
  
- h3{
+ #cardTitle{
   font-family: 'Nanum Gothic', sans-serif;
   font-weight: bold;
   font-size: 28px;
@@ -35,23 +58,13 @@ body {
  
  }
 
- #movie.card {
-   margin-top: 100px;
- }
-
- header p  {
+ #cuteSaying  {
   text-align:center;
   color: white;
   text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
  }
- p {
-  font-size: 18px;
-  /* color: black; */
-  /* color: rgb(158, 202, 193); */
-  /* font-weight: bold; */
-  /* text-align: center; */
- }
- 
+
+
  .container  {
   background-color: rgb(228, 228, 228);
   margin-top: 20px;
@@ -70,33 +83,16 @@ body {
   width:  500px;
   height: 50px;
   background: white;
-  /* border: 5px color grey; */
+  border: 5px color grey;
   margin-top: 7.5px;
   text-align:  center;
   border-radius:.25em;
-  /* object-position: center; */
   }
  
- /* a#recipeButton.btn-small  {
-  object-position: center;
- } */
  .input-field  {
-  /* object-position: center; */
-  /* margin-left:300px; */
-  /* margin: 0 auto; */
   display: flex;
-  /* justify-content: center; */
   flex-direction: column;
   align-items: center;
- 
- }
- 
- 
- div.col.s6  {
-  /* background:  rgb(255, 227, 175); */
-  border:5px rgb(65, 65, 65);
-  height: 825px;
-  margin-top:20px;
  
  }
  
@@ -110,111 +106,29 @@ body {
   font-family: Georgia,serif;
   font-weight: bold;
  }
- 
- 
- 
- #search {
- width:  500px;
- height: 50px;
- background: white;
- border: 5px color grey;
- margin-top: 7.5px;
- text-align:  center;
- border-radius:.25em;
- }
- 
- 
+
  header  {
-  /* background-color:white; */
   background: url("../images/headerPic.jpg");
-  /* background-repeat: no-repeat;   */
- /* background-size:100% 100%; */
    background-size: cover;
-  /* background-color:rgb(136, 135, 135); */
   margin-top: -10px;
   border-bottom: 2px solid #cccccc;
-  /* height:100%;
-  width:100%; */
  }
  
  .footer {
   text-align: center;
   font-weight: bold;
-  }
- 
- footer{
-  align-content: center;
   background-color: rgb(109, 170, 35);
-  position: center;
- 
- }
- 
- /* .recipeBtn  {
-  margin-top:100px;
- } */
- .recipeTitle{
-  margin-top: 20px;
-  color: rgb(109, 170, 35);
-  text-align: center;
-  font-size: 22px;
-  font-family: 'Nanum Gothic', sans-serif;
- }
- 
- 
- .movieTitleText {
-  color: rgb(109, 170, 35);
-  font-size: 22px;
-  font-family: 'Nanum Gothic', sans-serif;
-  text-align: center;
- 
- }
- 
- #movie-image {
-   margin-bottom: 30px;
-   display: block;
-   margin-left: auto;
-   margin-right: auto;
-   width: 75%;
- }
- 
- #recipe-image {
-   margin-bottom: 30px;
-   display: block;
-   margin-left: auto;
-   margin-right: auto;
-   width: 75%;
- }
+  }
 
- /* .card-title {
- color: rgb(251, 207, 171);
- font-family: Georgia,serif;
- 
- } */
- 
  img {
   margin-top: 10px;
  }
- 
- div div p {
-  margin-top: 20px;
- }
- 
+  
  .card {
   margin-top: -25px;
   padding-top: 10px;
  }
- 
- .plotClass  {
-  margin-top:20px;
-  position:left;
-  font-family: 'Nanum Gothic', sans-serif;
- }
- 
- .recipeIngredients {
 
-  margin-top: 20px;
-  position:left; 
-  font-family: 'Nanum Gothic', sans-serif;
- }
  
  
+
