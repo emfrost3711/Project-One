@@ -1,4 +1,4 @@
-Netflix and Chili
+# Netflix and Chili
 
 This product solves the age-old question of "what's for dinner?" Simply enter the movie you're going to watch and Netflix and Chili will pair it with a recipe specific to your movie's theme! Don't care for the recipe you got? Click again to get another until you find one that looks delish. 
 
