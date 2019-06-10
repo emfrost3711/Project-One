@@ -4,12 +4,12 @@ This product solves the age-old question of "what's for dinner?" Simply enter th
 
 With gratitude and credit to both [Edamam](https://developer.edamam.com/edamam-recipe-api) and [OMDb](http://omdbapi.com) APIs. 
 
-
+Collaborators of this project include [Kristen Christeson](https://github.com/KCEliza), [Emily Frost](https://github.com/emfrost3711), [Christelle Mangama](https://github.com/mangama) and [Dee Newbold](https://github.com/durangotan).
 
 ---
 
 
-Additionally, below is our initial psuedo-code. 
+Below is our initial psuedo-code. 
 # Project-One
 
 Title- Netflix and Chili (Centered)
@@ -37,4 +37,4 @@ Provide random movie for search criteria
 Check boxes (for both)
 If (watch for) box is checked keep movie/recipe displayed on screen
 
-Footer- Credit to Edamam and IMDB
+Footer- Credit to Edamam and OMDb
